@@ -4,3 +4,4 @@ var drawCats = function (howManyTimes) {
         console.log(i + " =^.^= ");
     }
 };
+/* Рисуем столько котиков, сколько захотим! */
