@@ -10,3 +10,6 @@ var dinosaurs = [
 ];
 console.log(dinosaurs.length);
 console.log(dinosaurs[dinosaurs.length - 1]);
+dinosaurs.push("Тираннозавр 3000");
+dinosaurs.unshift("Тираннозавр 0");
+
