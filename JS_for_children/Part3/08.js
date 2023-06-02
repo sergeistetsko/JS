@@ -9,3 +9,4 @@ var dinosaurs = [
     "Тираннозавр 8",    
 ];
 dinosaurs[4];
+dinosaurs[0] = "Тиранозавр 1000";
