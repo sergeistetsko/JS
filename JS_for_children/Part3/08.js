@@ -10,3 +10,5 @@ var dinosaurs = [
 ];
 dinosaurs[4];
 dinosaurs[0] = "Тиранозавр 1000";
+dinosaurs[8] = "Тиранозавр 2000";
+console.log(dinosaurs);
