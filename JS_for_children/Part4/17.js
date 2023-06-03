@@ -3,3 +3,4 @@ var cat = {
     "name": "Гармония",
     "color": "Черепаховый"
 };
+Object.keys(cat);
