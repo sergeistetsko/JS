@@ -20,3 +20,6 @@ true || false;
 7>5;
 7>=7;
 7=="7";
+
+let a;
+a = null;
