@@ -7,4 +7,5 @@ str.slice(1,3);
 str.toLowerCase();
 str.toUpperCase();
 let text = "  СтРоКа  ";
-text.toLowerCase().trim();
+let str1 = text.toLowerCase().trim();
+str1[0].toUpperCase()+str1.slice(1);
