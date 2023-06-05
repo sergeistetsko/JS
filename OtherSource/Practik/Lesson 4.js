@@ -45,3 +45,5 @@ arr3.reverse();
 
 "a, b, c, d".split();
 "a, b, c, d".split(", ");
+
+"abcd".split("");
