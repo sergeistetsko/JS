@@ -14,3 +14,11 @@ let matrix = [
     [7,8,9]
 ];
 matrix;
+matrix[2][2];
+
+matrix[matrix.length-1];
+
+matrix.shift();
+matrix.push(8);
+matrix;
+
