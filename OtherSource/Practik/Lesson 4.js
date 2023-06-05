@@ -34,3 +34,6 @@ arr3;
 arr3.indexOf(4);
 
 arr.join();
+
+arr.splice(1,1,0);
+arr.splice(-1,0,"Add element");
