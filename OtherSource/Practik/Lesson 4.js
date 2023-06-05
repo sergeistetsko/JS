@@ -37,3 +37,6 @@ arr.join();
 
 arr.splice(1,1,0);
 arr.splice(-1,0,"Add element");
+
+arr3.slice(3,5);
+arr.includes("Text");
