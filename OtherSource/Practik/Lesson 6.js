@@ -17,11 +17,20 @@
 
 // confirm("Удалить ваш аккаунт?") ? alert("Удалено") : alert("Отменено");
 
+// let age = prompt("Введите ваш возраст");
+// if (age < 18) {
+//     alert("Мой возраст меньше 18")
+// } else if (age > 18) {
+//     alert("Мне больше 18")    
+// } else if (age == 18) {
+//     alert("Мне 18")     
+// };
+
 let age = prompt("Введите ваш возраст");
-if (age < 18) {
-    alert("Мой возраст меньше 18")
-} else if (age > 18) {
-    alert("Мне больше 18")    
-} else if (age == 18) {
-    alert("Мне 18")     
-};
+switch(true) {
+    case age > 18: alert("Мой возраст меньше 18")
+    break;
+    case age < 18: alert("Мой возраст меньше 18")
+    break;
+    default: alert("Мне 18") 
+}
