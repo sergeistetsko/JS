@@ -40,3 +40,8 @@ arr.splice(-1,0,"Add element");
 
 arr3.slice(3,5);
 arr.includes("Text");
+
+arr3.reverse();
+
+"a, b, c, d".split();
+"a, b, c, d".split(", ");
