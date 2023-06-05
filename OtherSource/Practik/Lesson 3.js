@@ -13,3 +13,11 @@ Math.ceil(3.9);
 Math.round(3.5);
 
 Math.trunc(3.1);
+
+4.758.toFixed(2);
+
+let a = "5";
+
+a+5
+
++a+5
