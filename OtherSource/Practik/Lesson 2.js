@@ -4,3 +4,7 @@ str.length;
 str[0];
 str[str.length-1];
 str.slice(1,3);
+str.toLowerCase();
+str.toUpperCase();
+let text = "  СтРоКа  ";
+text.toLowerCase().trim();
