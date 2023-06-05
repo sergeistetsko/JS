@@ -5,3 +5,10 @@ let obj = {
     "color4": "Tomato4",
     "color5": "Tomato5",
 };
+
+obj["color"];
+obj.color;
+
+Object.keys(obj);
+
+obj["color6"] = "Tomato6";
