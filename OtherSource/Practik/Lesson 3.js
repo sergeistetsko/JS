@@ -6,3 +6,10 @@ Math.pow(2,5);
 
 Math.sqrt(16);
 
+Math.floor(3.9);
+
+Math.ceil(3.9);
+
+Math.round(3.5);
+
+Math.trunc(3.1);
