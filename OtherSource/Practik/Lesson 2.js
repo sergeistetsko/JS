@@ -17,3 +17,6 @@ true && false;
 true || true;
 true || false;
 
+7>5;
+7>=7;
+7=="7";
