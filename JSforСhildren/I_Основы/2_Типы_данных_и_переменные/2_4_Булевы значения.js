@@ -43,7 +43,7 @@ mySecretNumber === grouchoGuess;
 let age = 11;
 let accompanied = true;
 
-(age < 12 || accompanied) || age >= 12;
+(age < 12 && accompanied) || age >= 12;
 
 // undefined и null - оба означают пусто
 // undefined - не может найти другого значения
