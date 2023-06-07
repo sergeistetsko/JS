@@ -1,6 +1,5 @@
-var sillyString = "эЙ, кАК деЛа?";
-var lowerString = sillyString.toLowerCase();
-var firstCharacter = lowerString[0];
-var firstCharacterUpper = firstCharacter.toUpperCase();
-var restOfString = lowerString.slice(1);
-firstCharacterUpper + restOfString;
+/* 
+Математические операции - сложение, вычитание, умножение, деление;
+Операторы - + - * /
+Можно ставить скобки для того, чтобы что-то выполнялось в первую очередь;
+*/
