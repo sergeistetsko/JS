@@ -95,3 +95,18 @@ function reverse(number) {
     }
     return +reverseNumber
 }
+
+// Подсчёт количества чётных и нечётных цифр числа
+
+function number(number) {
+    number += "";
+    let chet = 0, nechet = 0;
+    for (let i=0; i<number.length; i++) {
+        if(num[i]%2 == 0) chet++;
+        else nechet++;
+    }
+    return {
+        "Чётные числа": chet,
+        "Нечётные числа": nechet
+    }
+}
