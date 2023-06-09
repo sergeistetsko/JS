@@ -69,4 +69,18 @@ function factorial(n) {
 }
 let a = factorial(3);
 
-// 
+// Вывести сумму и произведение всех элементов в строке
+
+let addAndMul = function(num) {
+    num += ""; //превращаем значение num в строку
+    let add = 0, mul = 1;
+    for (let i=0; i<num.length; i++) {
+        add += +num[i]; // + превращаем в число строку
+        mul *= num[i];
+    }
+    return {
+        "Сумма": add,
+        "Произведение": mul
+    }
+}
+console.log(addAndMul);
