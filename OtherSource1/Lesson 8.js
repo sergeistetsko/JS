@@ -21,3 +21,15 @@ let age = 29;
 
 let res = alert(printText3(name, age));
 console(res);
+
+// Методы объектов - функции, делающие что-то с конкретным объектом
+
+let obj = {
+    name: "Petr",
+    age: 18,
+    hello() {
+        console.log("Меня зовут "+this.name);
+    }
+}
+
+obj.hello();
