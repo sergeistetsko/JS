@@ -1,5 +1,5 @@
 // Хранение информации о фильмах
-var movies = {
+let movies = {
     "В поисках Немо": {
         releaseDate: 2003,
         duration: 100,
@@ -19,10 +19,10 @@ var movies = {
         format: "Blu-ray"
     },
 };
-var findingNemo = movies["В поисках Немо"];
+let findingNemo = movies["В поисках Немо"];
 findingNemo.duration;
 findingNemo.format;
-var cars = {
+let cars = {
     releaseDate: 2006,
     duration: 117,
     actors: ["Оуэн Уилсон", "Бонни Хант", "Пол Ньюман"],
