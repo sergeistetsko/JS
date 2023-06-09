@@ -83,4 +83,15 @@ let addAndMul = function(num) {
         "Произведение": mul
     }
 }
-console.log(addAndMul);
+console.log(addAndMul());
+
+// Инвертирование всех цифр
+
+function reverse(number) {
+    number += "";
+    let reverseNumber = "";
+    for(let i = number.length-1; i>=0; i--) {
+        reverseNumber += number[i];
+    }
+    return +reverseNumber
+}
