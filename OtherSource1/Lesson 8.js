@@ -56,3 +56,17 @@ function fibonachi(count) {
     return fib;
 }
 let f = fibonachi(10);
+
+// Вычислим факториал числа
+
+function factorial(n) {
+    let fact = 1;
+    if(n==0) return fact;
+    for (let i=1; i<=n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+let a = factorial(3);
+
+// 
