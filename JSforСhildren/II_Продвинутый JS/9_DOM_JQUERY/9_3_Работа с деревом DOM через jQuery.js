@@ -9,3 +9,10 @@ $("#main-heading").text(newHeadingText);
 // Создание новых элементов через jquery
 
 $("body").append("<p>Это новый параграф</p>");
+
+// Добавление нескольких элементов через цикл for
+
+for (let i=0; i<3; i++) {
+    let hobby = prompt("Назови одно из своих хобби");
+    $("body").append("<p>" + hobby + "</p>");
+}
