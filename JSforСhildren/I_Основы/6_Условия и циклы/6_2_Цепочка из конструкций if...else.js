@@ -1,7 +1,7 @@
 // Цепочка из конструкций if... else
-var lemonChicken = false;
-var beefWithBlackBean = false;
-var sweetAndSourPork = false;
+let lemonChicken = false;
+let beefWithBlackBean = false;
+let sweetAndSourPork = false;
 
 if (lemonChicken) {
     console.log("Отлично! Я буду курицу с лимоном!");
