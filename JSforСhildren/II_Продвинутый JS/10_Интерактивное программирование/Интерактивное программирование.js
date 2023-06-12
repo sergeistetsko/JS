@@ -132,7 +132,7 @@
 // }; 
 // setInterval(moveHeading, 5)
 
-// Упражнение 3 - Остановка анимации по клику - !!! доработать код
+// Упражнение 3 - Остановка анимации по клику
 
 // let leftOffset = 0;
 // let topOffset = 0;
@@ -176,6 +176,72 @@
 // } 
 // counter++;     
 // }; 
-// setInterval(moveHeading, 5)
 
-// Упражнение 4 - Напишите игру "Кликни по заголовку" - !!! доработать код
+// let intervalId = setInterval(moveHeading, 5);
+
+// $("#heading").click(function () {
+//     clearInterval(intervalId);
+//   });
+
+// Упражнение 4 - Напишите игру "Кликни по заголовку"
+
+// let leftOffset = 0;
+// let topOffset = 0;
+// let max = 200;
+// let counter = 0;
+// let intervalLength = 120;
+// let clicks = 0;
+// let currentDirection = "right";
+
+// $("#heading").offset({ left : leftOffset, top : topOffset});
+
+// let moveHeading = function () {
+
+// if (currentDirection === "right")   {
+//     $("#heading").offset({left : leftOffset });
+//     leftOffset++;
+//     if (counter === max) {
+//         currentDirection = "bottom";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "bottom")   {
+//     $("#heading").offset({top : topOffset });
+//     topOffset++;
+//     if (counter === max) {
+//         currentDirection = "left";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "left")   {
+//     $("#heading").offset({left : leftOffset });
+//     leftOffset--;
+//     if (counter === max) {
+//         currentDirection = "top";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "top")   {
+//     $("#heading").offset({top : topOffset });
+//     topOffset--;
+//     if (counter === max) {
+//         currentDirection = "right";
+//         counter = 0;
+//     }
+// } 
+// counter++;     
+// }; 
+
+// let intervalId = setInterval(moveHeading, intervalLength);
+
+// $("#heading").click(function () {
+//     clearInterval(intervalId);
+//     intervalLength /= 2;
+//     clicks++;
+
+// if (clicks > 10) {
+//     $("#heading").text("Вы победили!");
+// } else {
+//     intervalId = setInterval(moveHeading, intervalLength);
+// }
+// });
