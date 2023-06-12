@@ -77,3 +77,105 @@
 
 // Упражнения
 
+// Упражнение 1 - Следом за кликами
+
+// $("html").click(function (event) {
+//     $("#heading").offset({
+//        left: event.pageX,
+//        top: event.pageY 
+//     });
+// }); 
+
+// Упражнение 2 - Создайте собственную анимацию
+
+// let leftOffset = 0;
+// let topOffset = 0;
+// let max = 200;
+// let counter = 0;
+// let currentDirection = "right";
+
+// let moveHeading = function () {
+
+// if (currentDirection === "right")   {
+//     $("#heading").offset({left : leftOffset });
+//     leftOffset++;
+//     if (counter === max) {
+//         currentDirection = "bottom";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "bottom")   {
+//     $("#heading").offset({top : topOffset });
+//     topOffset++;
+//     if (counter === max) {
+//         currentDirection = "left";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "left")   {
+//     $("#heading").offset({left : leftOffset });
+//     leftOffset--;
+//     if (counter === max) {
+//         currentDirection = "top";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "top")   {
+//     $("#heading").offset({top : topOffset });
+//     topOffset--;
+//     if (counter === max) {
+//         currentDirection = "right";
+//         counter = 0;
+//     }
+// } 
+// counter++;     
+// }; 
+// setInterval(moveHeading, 5)
+
+// Упражнение 3 - Остановка анимации по клику - !!! доработать код
+
+// let leftOffset = 0;
+// let topOffset = 0;
+// let max = 200;
+// let counter = 0;
+// let currentDirection = "right";
+
+// let moveHeading = function () {
+
+// if (currentDirection === "right")   {
+//     $("#heading").offset({left : leftOffset });
+//     leftOffset++;
+//     if (counter === max) {
+//         currentDirection = "bottom";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "bottom")   {
+//     $("#heading").offset({top : topOffset });
+//     topOffset++;
+//     if (counter === max) {
+//         currentDirection = "left";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "left")   {
+//     $("#heading").offset({left : leftOffset });
+//     leftOffset--;
+//     if (counter === max) {
+//         currentDirection = "top";
+//         counter = 0;
+//     }
+// } 
+// if (currentDirection === "top")   {
+//     $("#heading").offset({top : topOffset });
+//     topOffset--;
+//     if (counter === max) {
+//         currentDirection = "right";
+//         counter = 0;
+//     }
+// } 
+// counter++;     
+// }; 
+// setInterval(moveHeading, 5)
+
+// Упражнение 4 - Напишите игру "Кликни по заголовку" - !!! доработать код
