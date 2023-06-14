@@ -1,4 +1,4 @@
-// Проектирование игры
+// Проектирование игры (модифицированная версия)
 
 // Разбор структуры игры
 
@@ -33,27 +33,30 @@ let getDistance = function (event, target) {
 // Сообщаем игроку, насколько он близок к цели
 
 let getDistanceHint = function (distance) {
-    if (distance < 10) {
+    
+    if (distance < 20) {
         return "Обожжёшься!";
-    } else if (distance < 20) {
-        return "Очень горячо";
     } else if (distance < 40) {
-        return "Горячо";
+        return "Очень горячо!";
     } else if (distance < 80) {
-        return "Тепло";
+        return "Горячо!";
     } else if (distance < 160) {
-        return "Холодно";
+        return "Тепло!";
     } else if (distance < 320) {
-        return "Очень холодно";
+        return "Холодно!";
+    } else if (distance < 640) {
+        return "Очень холодно!";
+    } else if (distance < 640) {
+        return "Очень-очень холодно!";
     } else {
         return "Замёрзнешь!";
     }
-}; 
 
+}; 
 // Задаём координаты клада
 
-let width = 400;
-let height = 400;
+let width = 800;
+let height = 800;
 let clicks = 0;
 
 let target = {
@@ -70,12 +73,19 @@ $("#map").click(function (event) {
 
 let distance = getDistance(event, target);
 let distanceHint = getDistanceHint(distance);
-$("#distance").text(distanceHint);
 
 // Проверка на выигрыш
 
-if (distance < 8) {
+let numberClicks = 20;
+
+if (distance < 16) {
     alert("Клад найден! Сделано кликов: " + clicks);
+};
+if (clicks < numberClicks) {
+    $("#distance").text(distanceHint + " Осталось кликов: " + (numberClicks - clicks));
+};
+if (clicks == numberClicks) {
+    alert("Конец игры! Сделано кликов: " + clicks);
 };
 });
 
