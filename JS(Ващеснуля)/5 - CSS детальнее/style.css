@@ -1,0 +1,13 @@
+img {
+    width: 50px;
+}
+.important-item {
+    color: red;
+    font-size: 20px;
+    border: red 1px solid;
+    margin-left: 10px;
+    padding: auto;
+}
+.important-size {
+    font-size: 40px;
+}
