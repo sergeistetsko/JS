@@ -76,7 +76,7 @@
 
 // Создание конструктора
 
-let Car = function (x, y) {
+var Car = function (x, y) {
     this.x = x;
     this.y = y;
 };
@@ -84,7 +84,8 @@ let Car = function (x, y) {
 // Рисуем машины
 
 var drawCar = function (car) {
-    var carHtml = '<img src="1.jpg">';
+    var carHtml = '<img src="1.png">';
+
     var carElement = $(carHtml);
 
     carElement.css({
@@ -95,3 +96,20 @@ var drawCar = function (car) {
 
     $("body").append(carElement);
 };
+
+// Проверка функции drawCar
+
+var tesla = new Car(20,20);
+var nissan = new Car(100,200);
+drawCar(tesla);
+drawCar(nissan);
+
+// Настройка объктов через прототипы
+
+// Прототипы JS - это механизмяя. который упрощает использование методов разными объектами
+// У всех конструкторов есть свойство prototype, к которому можно добавлять методы; любой метод, добавленный свойству prototype, будет доступен всем объектам, которые созданы с помощью этого конструктора. 
+
+// Пример: Имя конструктора.prototype.имя метода = function () {тело метода}
+
+// Добавление метода draw к прототипу Car
+
