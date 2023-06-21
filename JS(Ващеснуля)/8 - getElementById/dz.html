@@ -1,0 +1,69 @@
+<input value="Sergei" class="first-name" id="first-name">
+<input value="Stetsko" class="last-name" id="last-name">
+<input value="Brest" class="address-name" id="address-name">
+
+<select id="cities">
+    <option>Kiev</option>
+    <option selected="selected">Minsk</option>
+    <option>Moscow</option>
+</select>
+
+<textarea id="hobbies">JS, CSS, HTML</textarea>
+
+<div id="avatar-wrapper">
+    <img id="avatar" src="https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png" alt="avatar">
+</div>
+
+<script>
+    // определяем две переменные
+
+    var firstNameEl;
+    var firstNameId;
+
+    // присваиваем переменной строку-айдишку, которую нужно найти в html
+    firstNameId = "first-name";
+
+    // находим элемент по айдишнику и результат (найденный элемент) присваиваем переменной firstNameEl
+    firstNameEl = document.getElementById(firstNameId);
+
+    // аллертим атрибут value у найденного элемента
+
+    window.alert(firstNameEl.value);
+    window.alert(firstNameEl.className);
+
+    var lastNameId;
+    var addressNameId;
+
+    lastNameId = "last-name";
+    addressNameId = "address-name";
+
+    lastNameEl = document.getElementById(lastNameId); 
+    addressNameEl = document.getElementById(addressNameId); 
+
+    window.alert(lastNameEl.value);   
+    window.alert(addressNameEl.value);   
+
+    var citiesId;
+    var citiesEl;
+
+    citiesId = "cities";
+    citiesEl = document.getElementById(citiesId);
+
+    window.alert(citiesEl.value)
+
+    var hobbiesId;
+    HobbiesId = "hobbies";
+    var hobbiesEl;
+    hobbiesEl = document.getElementById(hobbiesId);
+
+    var avatarWrapperId = "avatar-wrapper";
+    var avatarWrapperEl = document.getElementById(avatarWrapperId);
+    window.alert(avatarWrapperEl.value)
+    window.alert(avatarWrapperEl.innerHTML)
+
+    var avatarId = "avatar";
+    var avatarEl = document.getElementById(avatarId);
+    window.alert(avatarEl.src);
+    window.alert(avatarEl.alt);
+
+</script>
