@@ -1,0 +1,27 @@
+<input value="Sergei" class="first-name error-input" id="first-name">
+
+<script>
+
+var firstNameEl;
+
+firstNameId = "first-name";
+
+firstNameEl = document.getElementById(firstNameId);
+
+window.alert(firstNameEl.className);
+
+firstNameEl.className = "error-input";
+
+
+
+</script>
+
+<style>
+    .first-name {
+        border: green 5px solid;
+        padding: 5px;
+    }
+    .error-input {
+        border-color: red;
+    }   
+</style>
